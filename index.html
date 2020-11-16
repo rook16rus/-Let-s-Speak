@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Let's speak</title>
+</head>
+<body>
+    <div class="page container">
+        <nav class="page-nav">
+            <a href="#" class="logo">
+                <img src="img/logo.png" width="162" height="36" alt="Логотип компании Let's speak">
+            </a>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-item-link">Кабинет ученика</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Учебный класс</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Методичка</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Домашняя работа</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Экзамены</a></li>
+            </ul>
+            <ul class="menu-tools">
+                <li class="menu-tools-item"><a href="#" class="menu-tools-link">Настройки</a></li>
+            </ul>
+        </nav>
+
+        <header class="page-header">
+            <div class="search">
+                <form method="get" class="search-form">
+                    <button type="button" class="search-button">Искать</button>
+                    <label for="search-field">Введите запрос</label>
+                    <input type="text" id="search-field" class="search-field" placeholder="Поиск...">
+                </form>
+            </div>
+            <div class="profile">
+                <a href="#" class="profile-name" data-text="O">Опознанный Енот</a>
+                <button class="profile-button"></button>
+            </div>
+            <div class="notifications">
+                <a href="#" class="notification-button">
+                    <span>1</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="page-main">
+            <section class="slider">
+                <img src="img/slider-photo.png" width="828" height="308" alt="Биг-Бэн" class="slider-img">
+                <p class="slider-title">«Бифитер», «Кокни», «Даблдекер»...</p>
+                <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+                <a href="#" class="button button-orange slider-link">Пройти тест ➞</a>
+                <button type="button" class="button-prev">Назад</button>
+                <button type="button" class="button-next">Вперед</button>
+            </section>
+            <section class="offers">
+                <ul class="offers-list">
+                    <li class="offers-item">
+                        <h3 class="offers-item-title">Английский завтрак</h3>
+                        <div class="offers-item-info">
+                            <p class="offers-item-text">Разговорный клуб</p>
+                            <time datetime="2020-10-01" class="offers-item-time">10:00 — 11:00 (ПН—ПТ)</time>
+                        </div>
+                        <a href="#" class="offers-item-link">Записаться ➞</a>
+                    </li>
+                    <li class="offers-item">
+                        <h3 class="offers-item-title">Лето в Лондоне</h3>
+                        <div class="offers-item-info">
+                            <p class="offers-item-text">Месяц экскурсий и практики</p>
+                            <time datetime="2020-10-06" class="offers-item-time">10 июня — 3 июля</time>
+                        </div>
+                        <a href="#" class="offers-item-link">Отправиться ➞</a>
+                    </li>
+                    <li class="offers-item">
+                        <h3 class="offers-item-title">Надоел английский?</h3>
+                        <div class="offers-item-info">
+                            <p class="offers-item-text">С нами можно выучить и другие языки</p>
+                        </div>
+                        <a href="#" class="offers-item-link">Открыть список ➞</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="video">
+                <div class="video-block">
+                    <video class="lesson-video" poster="img/lesson-photo.png" width="540" height="300">
+                        <source src="" type="video.mp4">
+                    </video>
+                    <button class="play-video-button"></button>
+                </div>
+                <div class="lessons-play-list-wrapper">
+                    <h3 class="play-list-title">Курс English A1</h3>
+                    <ul class="play-list">
+                        <li class="play-list-item">
+                            <button type="button" class="play-lesson-button"></button>
+                            <p class="lesson-number">Урок 8</p>
+                            <p class="lesson-name">Времена глаголов</p>
+                        </li>
+                        <li class="play-list-item">
+                            <button type="button" class="play-lesson-button"></button>
+                            <p class="lesson-number">Урок 9</p>
+                            <p class="lesson-name">Неправильные глаголы</p>
+                        </li>
+                        <li class="play-list-item">
+                            <button type="button" class="play-lesson-button"></button>
+                            <p class="lesson-number">Урок 10</p>
+                            <p class="lesson-name">Present Simple</p>
+                        </li>
+                        <li class="play-list-item">
+                            <button type="button" class="play-lesson-button"></button>
+                            <p class="lesson-number">Урок 11</p>
+                            <p class="lesson-name">Past Simple</p>
+                        </li>
+                        <li class="play-list-item">
+                            <button type="button" class="play-lesson-button"></button>
+                            <p class="lesson-number">Урок 12</p>
+                            <p class="lesson-name">Present Continue</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacts">
+                <h2 class="contacts-title">Контакты</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот </p>
+                            <p class="contacts-language">English A1</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 2</p>
+                            <p class="contacts-language">Español 2</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 3</p>
+                            <p class="contacts-language">日本語</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 4</p>
+                            <p class="contacts-language">English B2</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 5</p>
+                            <p class="contacts-language">Le Français</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 6</p>
+                            <p class="contacts-language">Español 1</p>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="#" class="contacts-item-link">
+                            <p class="contacts-name">Неопознанный Енот 7</p>
+                            <p class="contacts-language">Italiano</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p class="footer-copyright">© 2020 </p>
+            <a href="#" class="footer-logo">Let’s Speak, языковая школа</a>
+            <p class="footer-copyright-details">Сайт создан в HTML Academy</p>
+        </footer>
+    </div>
+</body>
+</html>

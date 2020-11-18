@@ -33,6 +33,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    text-decoration: none;
 }
 
 .button-orange {
@@ -171,15 +172,6 @@ body {
     background: white;
 }
 
-.page-main {
-    grid-area: main;
-
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 300px auto 1fr;
-    background: #F1F3FE;
-}
-
 .search {
     padding: 30px;
 }
@@ -312,6 +304,18 @@ body {
     top: 3px;
 }
 
+.page-main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 300px auto 1fr;
+    gap: 20px;
+
+    background: #F1F3FE;
+    padding: 30px;
+}
+
 .slider {
     grid-area: 1/1/2/2;
 
@@ -319,26 +323,84 @@ body {
     width: 820px;
     height: 300px;
     overflow: hidden;
+    padding: 70px 20px 50px 60px;
+    box-sizing: border-box;
 }
 
 .slider-title {
     position: relative;
+
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 48px;
+    color: white;
+
+    margin: 0 0 10px;
 }
 
 .slider-text {
     position: relative;
+
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+
+    margin: 10px 0 30px;
+    max-width: 470px;
 }
 
 .slider-link {
     position: relative;
+
+    margin: 30px 0 0;
+}
+
+.button-prev, .button-next {
+    width: 64px;
+    height: 64px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 0;
 }
 
 .button-prev {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
 }
 
 .button-next {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%);
+}
+
+.button-prev::before, .button-next::before {
+    content: "";
+
+    width: 13px;
+    height: 13px;
+    border: 2px solid #B4BEF0;
+    border-bottom: transparent;
+    border-left: transparent;
+
+    position: absolute;
+}
+
+.button-prev::before {
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%) rotate(225deg);
+}
+
+.button-next::before {
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .slider-img {

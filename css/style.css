@@ -60,6 +60,109 @@ body {
     background: white;
 }
 
+.logo {
+    margin: 25px 0 20px 30px;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 20px 0 20px 60px;
+    position: relative;
+}
+
+.menu-item:hover {
+    background: #F1F3FE;
+}
+
+.menu-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+}
+
+.menu-item-cabinet::before {
+    background: url("../img/cabinet-icon.png") no-repeat center;
+}
+
+.menu-item-learn::before {
+    background: url("../img/learn-icon.png") no-repeat center;
+}
+
+.menu-item-method::before {
+    background: url("../img/method-icon.png") no-repeat center;
+}
+
+.menu-item-homework::before {
+    background: url("../img/homework-icon.png") no-repeat center;
+}
+
+.menu-item-exams::before {
+    background: url("../img/exams-icon.png") no-repeat center;
+}
+
+.menu-item-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3C425F;
+    text-decoration: none;
+}
+
+.menu-item:hover .menu-item-link {
+    font-weight: 500;
+    color: #576BCC;
+}
+
+.menu-tools {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.menu-tools-item {
+    padding: 20px 0 20px 60px;
+    position: relative;
+}
+
+.menu-tools-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    background: url("../img/settings-icon.png") no-repeat center;
+}
+
+.menu-tools-item:hover {
+    background: #F1F3FE;
+}
+
+.menu-tools-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3C425F;
+    text-decoration: none;
+}
+
+.menu-tools-item:hover .menu-tools-link {
+    font-weight: 500;
+    color: #576BCC;
+}
+
 .page-header {
     grid-area: header;
 

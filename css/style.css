@@ -59,6 +59,7 @@ body {
     display: grid;
     grid-template-rows: 80px 1fr auto;
     background: white;
+    border-right: 1px solid #B4BEF0;
 }
 
 .logo {
@@ -170,6 +171,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto 80px;
     background: white;
+    border-bottom: 1px solid #B4BEF0;
 }
 
 .search {
@@ -325,6 +327,7 @@ body {
     overflow: hidden;
     padding: 70px 20px 50px 60px;
     box-sizing: border-box;
+    box-shadow: 0 1px 4px 0 rgba(60, 66, 95, 0.2);
 }
 
 .slider-title {
@@ -416,6 +419,52 @@ body {
 .offers-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.offers-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 140px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 1px 4px 0 rgba(60, 66, 95, 0.2);
+}
+
+.offers-item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    margin: 0 0 5px;
+}
+
+.offers-item-text {
+    margin: 5px 0;
+}
+
+.offers-item-time {
+    font-weight: 900;
+    color: #0BC4CF;
+
+    margin: 5px 0 10px;
+}
+
+.offers-item-link {
+    margin-top: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #576BCC;
+    text-decoration: none;
+    text-align: right;
 }
 
 .video {
